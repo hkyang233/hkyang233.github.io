@@ -1,307 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang's HomePage</title>
+    <!-- MDUI CSS -->
+<link rel="stylesheet" href="assets/css/mdui.min.css"/>
+</head>
+<body class="mdui-theme-primary-white mdui-theme-accent-blue mdui-drawer-body-left mdui-appbar-with-toolbar">
+    <!-- 顶部应用栏 -->
+    <header class="mdui-appbar mdui-appbar-fixed">
+      <div class="mdui-toolbar mdui-color-theme">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="javascript:;" class="mdui-typo-headline">Yang's HomePage</a>
+        <div class="mdui-toolbar-spacer"></div>
+      </div>
+    </header>
 
-    
-    <title>Yang&#39;s Blog</title>
+    <!-- 侧边栏 -->
+    <div class="mdui-drawer mdui-shadow-2" id="drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">Me</li>
+            <li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">person</i><div class="mdui-list-item-content">Blog</div></li>
+             <ul class="mdui-list">
+        <li class="mdui-subheader">Friends</li>
+        <div id="friends"></div>
+    </ul>
+         </li>
+        </ul>
+    </div>
+<br/><br/>
+    <!-- 主体内容 -->
+<div class="mdui-container">
+        <div class="mdui-row userinfo">
+            <div class="mdui-col-xs-12 mdui-col-md-4 mdui-text-center">
+                <img src="http://q.qlogo.cn/headimg_dl?dst_uin=2958445350&spec=640&img_type=jpg" class="mdui-img-circle mdui-shadow-3" style="width: 200px; height: 200px;" alt="Yang">
+            </div>
+            <div class="mdui-col-xs-12 mdui-col-md-8">
+                <h1>Yang</h1>
+                <p>没有谁的生活会一直完美，但无论什么时候，都要看向远方，满怀希望就会所向披靡。</p>
+                <div class="mdui-chip mdui-m-t-1">
+                  <span class="mdui-chip-title">Education: High School</span>
+                </div>
+                <div class="mdui-chip mdui-m-t-1">
+                  <span class="mdui-chip-title">Age: 18</span>
+                </div>
+                <div class="mdui-chip mdui-m-t-1">
+                  <span class="mdui-chip-title">Local: Guangdong</span>
+                </div>
+                <div class="mdui-chip mdui-m-t-1">
+                  <span class="mdui-chip-title">MBTI: INFP - T</span>
+                </div>
+                <div class="mdui-chip mdui-m-t-1">
+                  <span class="mdui-chip-title">Status: 🌴</span>
+                </div>
+                <div class="mdui-m-t-2">
+                    <a href="https://github.com/hkyang233/" class="mdui-btn mdui-btn-dense mdui-color-teal-accent mdui-ripple">GitHub</a>
+                    <a href="https://yang233.cn/" class="mdui-btn mdui-btn-dense mdui-color-cyan-accent mdui-ripple">Blog</a>
+                    <a href="mailto:2958445350@qq.com" class="mdui-btn mdui-btn-dense mdui-color-pink-accent mdui-ripple">Email</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mdui-divider mdui-m-y-4"></div>
+        
+        <div class="mdui-typo">
+            <h2>Who</h2>
+            <p>是一名准大学生<br/>目前在研究前端方面的知识....爱折腾一些跟技术有关的东西。</p>
+            <h2 class="mdui-m-t-3">Game</h2>
+            <p>啥都玩点 玩啥都菜</p>
+        </div>
+        
+        <footer class="mdui-text-center mdui-m-t-5">
+            © 2024 Hosted by Yang.
+        </footer>
+    </div>
 
-    <meta name="description" content="Yang&#39;s Blog">
-    <meta name="keywords" content="">
-
-    
-
-
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:locale" content="zh" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://example.com/index.html" />
-    <meta property="og:site_name" content="Yang" />
-    <meta property="article:publisher" content="" />
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "",
-            "description": "",
-            "publisher": {
-                "@type": "Organization",
-                "name": "Yang"
-            },
-        }
-    </script>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐏</text></svg>">
-    
-
-    
-
-    
-
-    
-<link rel="stylesheet" href="/dist/build.css?v=1654266144177.css">
-
-
-    
-<link rel="stylesheet" href="/dist/custom.css?v=1654266144177.css">
-
-
+    <!-- MDUI JavaScript -->
+<script src="assets/js/mdui.min.js"></script>
     <script>
-        window.isPost = false
-        window.aomori = {
-            
-            
-            valine: {
-                enable: true,
-                appId: "KF6BG91UXPqH49VpC8UuiNTC-gzGzoHsz",
-                appKey: "xtce67YuGe6DOGy4vojY05E2",
-                placeholder: "Hello World!",
-                avatar: "",
-                pageSize: "10",
-                lang: "zh-CN",
-                visitor: false,
-                highlight: false,
-                recordIP: false,
-                emojiCDN: "",
-                enableQQ: false,
-                requiredFields: []
-            },
-            
-            
-        }
-        window.aomori_logo_typed_animated = true
-        window.aomori_search_algolia = false
-
+        // 初始化侧边抽屉栏
+        var drawer = new mdui.Drawer('#drawer');
+        // 获取好友列表
+        fetch('https://yang233.cn/Api.php')
+        .then(res => res.json())
+        .then(data => {
+            let html = '';
+            data.forEach(friend => {
+                html += `<li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-avatar"><img src="${friend.avatar}"/></div>
+                    <div class="mdui-list-item-content"><a href="${friend.url}" target="_blank">${friend.name}</a></div>
+                </li>`;
+            });
+            document.getElementById('friends').innerHTML = html;
+        });
     </script>
-
-<meta name="generator" content="Hexo 5.4.2"></head>
-
-<body>
-
-    <div class="container">
-    <header class="header">
-        <div class="header-type">
-            
-            <div class="header-type-inner">
-                
-                    <div id="typed-strings" style="display:none">
-                        <p>Yang&#39;s Blog</p>
-                    </div>
-                    <a class="header-type-title" id="typed" href="/"></a>
-                
-    
-                
-            </div>
-        </div>
-        <div class="header-menu">
-            <div class="header-menu-inner">
-                
-                <a href="/">主页</a>
-                
-                <a href="/archives">归档</a>
-                
-                <a href="/friends">好基友</a>
-                
-                <a href="/about">关于我</a>
-                
-            </div>
-            <div class="header-menu-social">
-                
-            </div>
-        </div>
-
-        <div class="header-menu-mobile">
-            <div class="header-menu-mobile-inner" id="mobile-menu-open">
-                <i class="icon icon-menu"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="header-menu-mobile-menu">
-        <div class="header-menu-mobile-menu-bg"></div>
-        <div class="header-menu-mobile-menu-wrap">
-            <div class="header-menu-mobile-menu-inner">
-                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
-                    <i class="icon icon-cross"></i>
-                </div>
-                <div class="header-menu-mobile-menu-list">
-                    
-                    <a href="/">主页</a>
-                    
-                    <a href="/archives">归档</a>
-                    
-                    <a href="/friends">好基友</a>
-                    
-                    <a href="/about">关于我</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <div class="container">
-        <div class="main">
-            <section class="inner">
-                <section class="inner-main">
-                    <div class="index">
-  
-    
-      <article
-id="post-hello-world"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2022/07/23/hello-world/">Hello World</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>Blog重新建立了，阿巴阿巴。</p>
-<p>这是第一篇文章❀</p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2022-07-23T15:27:32.254Z" itemprop="datePublished">2022-07-23</time>
-</div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-
-  
-</div>
-
-                </section>
-            </section>
-
-            
-            <aside class="sidebar ">
-                
-
-
-<div class="widget" id="widget">
-    
-      
-    
-      
-
-    
-      
-
-    
-      
-  <div class="widget-wrap widget-recent-posts">
-    <div class="widget-title"><span>Recent Posts</span></div>
-    <div class="widget-inner">
-      <ul>
-        
-          <li>
-            <a href="/2022/07/23/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget-wrap widget-archive">
-    <div class="widget-title"><span>Archive</span></div>
-    <div class="widget-inner">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
-    </div>
-  </div>
-
-
-    
-</div>
-
-<div id="backtop"><i class="icon icon-arrow-up"></i></div>
-            </aside>
-            
-        </div>
-    </div>
-
-    <footer class="footer">
-    <div class="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Please do not remove this -->
-    <!-- 开源不易，请勿删除 -->
-    <div class="footer-wrap">
-        <div class="footer-inner"> 
-            Yang&#39;s Blog &copy; 2022<br>
-            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
-        </div>
-    </div>
-
-</footer>
-
-<script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
-
-
-
-
-
-
-<script src="/dist/build.js?1654266144177.js"></script>
-
-
-<script src="/dist/custom.js?1654266144177.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>
